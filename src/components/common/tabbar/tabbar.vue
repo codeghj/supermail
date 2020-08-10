@@ -24,7 +24,7 @@ name:'tabber',
     left: 0;
     right:  0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #eee;
 }
 .tabbar div{
     text-align: center;

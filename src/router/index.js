@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import VueRouter from 'VueRouter'
+import VueRouter from 'vue-router'
 Vue.use(VueRouter)
-import cart from '../views/cart/cart.vue'
-import home from '../views/home/home.vue'
-import profile from '../views/profile/profile.vue'
-import fenlei from '../views/fenlei/fenlei.vue'
+import cart from '../view/cart/cart.vue'
+import home from '../view/home/home.vue'
+import profile from '../view/profile/profile.vue'
+import fenlei from '../view/fenlei/fenlei.vue'
 const routes=[
     {
         path:'',
