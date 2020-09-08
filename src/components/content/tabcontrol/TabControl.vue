@@ -38,12 +38,9 @@ export default {
 .tabcontrol{
     display: flex;
     text-align: center;
-    position: sticky;
-    top: 40px;
     background-color: white;
-   z-index: 9;
-   height: 40px;
-   line-height: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 .tabcontrol-item{
     flex: 1;

@@ -5,6 +5,7 @@ import cart from '../view/cart/cart.vue'
 import home from '../view/home/home.vue'
 import profile from '../view/profile/profile.vue'
 import fenlei from '../view/fenlei/fenlei.vue'
+import detials from '../view/detials/detials'
 const routes=[
     {
         path:'',
@@ -27,6 +28,11 @@ const routes=[
         path:'/fenlei',
         component:fenlei
     },
+    {
+        path:'/detials/:iid',
+        component:detials
+
+    }
 ]
 const router=new VueRouter({
     routes,

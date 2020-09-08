@@ -34,10 +34,12 @@ width: 100%;
 text-align: center;
 height: 140px;
 border-bottom: 8px solid #eee;
+
 }
 .recommend-item{
   flex: 1;
-  padding: 10px;
+  padding-top: 10px;
+  
 }
 .recommend img{
 width: 70px;

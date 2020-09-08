@@ -1,7 +1,7 @@
 <!--  -->
 <template>
-  <div class="goods-item">
-   <img :src="lists.show.img" alt="">
+  <div class="goods-item" @click="itemclicks" >
+   <img v-lazy="showImg" alt="" @load="Goodsload" >
    <div class="goods-info"> 
        <p>{{lists.title}}</p>
        <span class="price">{{lists.price}}</span>
@@ -25,7 +25,21 @@ export default {
               return {}
           }
       }
+  },
+  computed: {
+    showImg(){
+      return this.lists.img||this.lists.image ||this.lists.show.img
+    }
+  },
+  methods: {
+    Goodsload(){
+      this.$bus.$emit('Goodsload')
+    },
+    itemclicks(){
+    this.$router.push('/detials/' +this.lists.iid)
   }
+  },
+  
 }
 </script>
 
@@ -33,7 +47,6 @@ export default {
 .goods-item {
     padding-bottom: 40px;
     position: relative;
-
     width: 48%;
   }
 

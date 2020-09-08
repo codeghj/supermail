@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>
+  <div class="maintabbar">
     <tabbar>
       <tabbaritem path="/home" activecolor="red">
         <img src="~assets/imag/tabbar/home.svg" alt slot="img-icon" />
@@ -40,4 +40,8 @@ export default {
 </script>
 
 <style  scoped>
+.maintabbar{
+  height: 49px;
+  z-index: 99;
+}
 </style>
