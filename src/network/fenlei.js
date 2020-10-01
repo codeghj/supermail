@@ -2,12 +2,12 @@ import {request}from './request'
 
 export function getfenlei(){
     return request({
-        url:'http://152.136.185.210:8000/api/z8/category'
+        url:'http://152.136.185.210:8000/api/w6/category'
     })
 }
 export function getsubcategory(maitKey){
     return request({
-        url:'http://152.136.185.210:8000/api/z8/subcategory',
+        url:'http://152.136.185.210:8000/api/w6/subcategory',
         params:{
             maitKey
         }
@@ -15,7 +15,7 @@ export function getsubcategory(maitKey){
 }
 export function getsubcategorydetails(miniWallkey,type){
     return request({
-        url:'http://152.136.185.210:8000/api/z8/subcategory/detail',
+        url:'http://152.136.185.210:8000/api/w6/subcategory/detail',
         params:{
             miniWallkey,
             type

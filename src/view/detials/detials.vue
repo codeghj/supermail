@@ -6,10 +6,9 @@
         <img src="~assets/imag/common/back.svg" alt />
       </div>
       <div slot="center" class="nav-center-item">
-        <div
-          v-for="(item,index) in banners"
+        <div v-for="(item,index) in banners"
           :class="{ 'active':currentindex==index}"
-          @click="itemclick(index)"
+          @click="itemclick(index)" :key="index"
         >{{item}}</div>
       </div>
     </navbar>

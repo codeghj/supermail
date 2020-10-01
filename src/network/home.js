@@ -7,7 +7,7 @@ export function homerequest(){
 }
 export function homegoods(type,page){
     return request({
-        url:'http://152.136.185.210:8000/api/z8/home/data',
+        url:'http://152.136.185.210:8000/api/w6/home/data',
         params:{
         type,
         page

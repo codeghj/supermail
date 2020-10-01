@@ -1,7 +1,7 @@
 import{request} from './request'
 export function detialsSwiper(iid){
     return request({
-     url:'http://152.136.185.210:8000/api/z8/detail',
+     url:'http://152.136.185.210:8000/api/w6/detail',
      params:{
          iid
      }
@@ -9,7 +9,7 @@ export function detialsSwiper(iid){
 }
 export function recommend(){
     return request({
-        url:'http://152.136.185.210:8000/api/z8/recommend'
+        url:'http://152.136.185.210:8000/api/w6/recommend'
     })
 }
 export class Goods{
